@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NR Foods — Catering &amp; Dine-In, Hyderabad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <svg viewBox="0 0 200 120" class="loader-svg">
+    <g class="loader-fork">
+      <line x1="70" y1="20" x2="70" y2="100" stroke="var(--maroon)" stroke-width="5" stroke-linecap="round"/>
+      <line x1="58" y1="20" x2="58" y2="45" stroke="var(--maroon)" stroke-width="5" stroke-linecap="round"/>
+      <line x1="82" y1="20" x2="82" y2="45" stroke="var(--maroon)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M58 45 Q58 55 70 55 Q82 55 82 45" stroke="var(--maroon)" stroke-width="5" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="loader-spoon">
+      <line x1="130" y1="45" x2="130" y2="100" stroke="var(--saffron-deep)" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="130" cy="30" rx="14" ry="18" fill="none" stroke="var(--saffron-deep)" stroke-width="5"/>
+    </g>
+  </svg>
+  <p class="loader-label">NR Foods</p>
+</div>
+
+<div class="grain"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img src="assets/nrfoods-logo.png" alt="NR Foods" class="brand-logo">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#celebrity">Celebrity Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit Us</a>
+      <div class="nav-social">
+        <a href="#" id="navIgBtn" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a href="#" id="navWaBtn" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon">
+          <svg viewBox="0 0 32 32" width="19" height="19" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.24.6 4.4 1.74 6.3L4 29l7.86-1.7a12.9 12.9 0 0 0 4.16.7h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3z"/></svg>
+        </a>
+      </div>
+      <a href="#enquiry" class="nav-cta">Get a Catering Quote</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-text">
+    <p class="hero-kicker">Multi-cuisine kitchen · Dine-in &amp; Catering · Hyderabad</p>
+    <h1>Food that shows up<br>for the occasion.</h1>
+    <p class="hero-sub">From a weekday plate at our outlet to a 500-guest wedding spread — NR Foods runs one kitchen, two ways to enjoy it.</p>
+    <div class="hero-actions">
+      <a href="#enquiry" class="btn btn-primary">Plan my event</a>
+      <a href="#visit" class="btn btn-ghost">Find the outlet</a>
+    </div>
+    <div class="hero-stats">
+      <div><strong>12+</strong><span>years cooking</span></div>
+      <div><strong>500+</strong><span>events catered</span></div>
+      <div><strong>4.7★</strong><span>customer rating</span></div>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <svg viewBox="0 0 520 560" class="hero-svg">
+      <ellipse cx="260" cy="500" rx="210" ry="30" fill="var(--ink)" opacity="0.08"/>
+      <circle cx="260" cy="240" r="210" fill="var(--saffron-soft)"/>
+      <g transform="translate(90,140)">
+        <ellipse cx="170" cy="270" rx="150" ry="26" fill="var(--maroon)"/>
+        <ellipse cx="170" cy="258" rx="150" ry="26" fill="var(--ivory)"/>
+        <ellipse cx="170" cy="252" rx="130" ry="20" fill="var(--saffron)"/>
+        <path d="M60 200 Q170 150 280 200" stroke="var(--maroon)" stroke-width="4" fill="none" opacity="0.35"/>
+        <circle cx="120" cy="215" r="14" fill="var(--maroon)"/>
+        <circle cx="170" cy="205" r="16" fill="var(--curry)"/>
+        <circle cx="220" cy="218" r="13" fill="var(--maroon)"/>
+        <circle cx="195" cy="235" r="10" fill="var(--curry)"/>
+        <circle cx="145" cy="238" r="10" fill="var(--saffron-deep)"/>
+        <!-- Illustrated chef hat + NR monogram, styled to match the plate art -->
+        <g transform="translate(170,15)">
+          <ellipse cx="0" cy="97" rx="72" ry="14" fill="var(--maroon)"/>
+          <path d="M-72 84 Q0 106 72 84 L64 100 Q0 118 -64 100 Z" fill="var(--maroon-deep)"/>
+          <rect x="-72" y="70" width="144" height="20" rx="10" fill="var(--saffron)"/>
+          <path d="M-70 40
+                   C-70 12 -52 -6 -30 -2
+                   C-24 -36 24 -36 30 -2
+                   C52 -6 70 12 70 40
+                   L70 78 L-70 78 Z"
+                fill="var(--ivory)" stroke="var(--maroon)" stroke-width="4" stroke-linejoin="round"/>
+          <rect x="-70" y="18" width="140" height="58" rx="16" fill="var(--ivory)" stroke="var(--maroon)" stroke-width="4"/>
+          <text x="0" y="60" text-anchor="middle" font-family="var(--font-display)" font-weight="700" font-size="36" fill="var(--maroon)">NR</text>
+        </g>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ MARQUEE STRIP ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Andhra thalis</span><span>·</span><span>Wedding catering</span><span>·</span><span>Corporate boxes</span><span>·</span><span>Biryani counters</span><span>·</span><span>Live tawa stations</span><span>·</span><span>Andhra thalis</span><span>·</span><span>Wedding catering</span><span>·</span><span>Corporate boxes</span><span>·</span><span>Biryani counters</span><span>·</span><span>Live tawa stations</span>
+  </div>
+</div>
+
+<!-- ============ MENU ============ -->
+<section class="section" id="menu">
+  <div class="section-head">
+    <h2>What's on today</h2>
+    <p>Same kitchen, dine-in portions. Swap this in for your real menu &amp; pricing.</p>
+  </div>
+
+  <div class="menu-tabs" id="menuTabs">
+    <button class="tab-btn active" data-tab="starters">Starters</button>
+    <button class="tab-btn" data-tab="mains">Mains</button>
+    <button class="tab-btn" data-tab="biryani">Biryani &amp; Rice</button>
+    <button class="tab-btn" data-tab="desserts">Desserts</button>
+  </div>
+
+  <div class="menu-panels">
+    <ul class="menu-panel active" data-panel="starters">
+      <li><div class="mi-name">Mirchi Bajji <span class="tag veg">Veg</span></div><div class="mi-desc">Stuffed green chilli, gram flour batter, tamarind dip</div><div class="mi-price">₹120</div></li>
+      <li><div class="mi-name">Chicken 65 <span class="tag nonveg">Non-Veg</span></div><div class="mi-desc">Curry leaf, dry red chilli, ginger-garlic</div><div class="mi-price">₹220</div></li>
+      <li><div class="mi-name">Gobi Manchurian <span class="tag veg">Veg</span></div><div class="mi-desc">Crisp cauliflower, dark soy-chilli glaze</div><div class="mi-price">₹160</div></li>
+      <li><div class="mi-name">Prawn Kebab <span class="tag nonveg">Non-Veg</span></div><div class="mi-desc">Charcoal grilled, mint-coriander marinade</div><div class="mi-price">₹280</div></li>
+    </ul>
+    <ul class="menu-panel" data-panel="mains">
+      <li><div class="mi-name">Gutti Vankaya Curry <span class="tag veg">Veg</span></div><div class="mi-desc">Stuffed brinjal, peanut-sesame masala</div><div class="mi-price">₹180</div></li>
+      <li><div class="mi-name">Natu Kodi Pulusu <span class="tag nonveg">Non-Veg</span></div><div class="mi-desc">Country chicken, tamarind gravy</div><div class="mi-price">₹260</div></li>
+      <li><div class="mi-name">Dal Palak</div><div class="mi-desc">Yellow lentil, spinach, garlic tadka</div><div class="mi-price">₹150</div></li>
+      <li><div class="mi-name">Paneer Butter Masala <span class="tag veg">Veg</span></div><div class="mi-desc">Cashew-tomato gravy, kasuri methi</div><div class="mi-price">₹210</div></li>
+    </ul>
+    <ul class="menu-panel" data-panel="biryani">
+      <li><div class="mi-name">Hyderabadi Chicken Dum Biryani <span class="tag nonveg">Non-Veg</span></div><div class="mi-desc">Dum-cooked, saffron rice, fried onion</div><div class="mi-price">₹260</div></li>
+      <li><div class="mi-name">Mutton Biryani <span class="tag nonveg">Non-Veg</span></div><div class="mi-desc">Slow-cooked, mint raita on the side</div><div class="mi-price">₹320</div></li>
+      <li><div class="mi-name">Veg Dum Biryani <span class="tag veg">Veg</span></div><div class="mi-desc">Mixed vegetables, whole spices</div><div class="mi-price">₹200</div></li>
+      <li><div class="mi-name">Bagara Rice <span class="tag veg">Veg</span></div><div class="mi-desc">Tempered rice, curry leaf, cashew</div><div class="mi-price">₹140</div></li>
+    </ul>
+    <ul class="menu-panel" data-panel="desserts">
+      <li><div class="mi-name">Double Ka Meetha <span class="tag veg">Veg</span></div><div class="mi-desc">Fried bread, saffron milk, dry fruits</div><div class="mi-price">₹110</div></li>
+      <li><div class="mi-name">Qubani Ka Meetha <span class="tag veg">Veg</span></div><div class="mi-desc">Stewed apricot, fresh cream</div><div class="mi-price">₹120</div></li>
+      <li><div class="mi-name">Gulab Jamun (2 pc) <span class="tag veg">Veg</span></div><div class="mi-desc">Warm, cardamom sugar syrup</div><div class="mi-price">₹90</div></li>
+      <li><div class="mi-name">Falooda</div><div class="mi-desc">Rose milk, basil seeds, vermicelli</div><div class="mi-price">₹140</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CATERING ============ -->
+<section class="section section-alt" id="catering">
+  <div class="section-head">
+    <h2>Catering, from planning to plating</h2>
+    <p>Four steps, whether it's a 30-guest office lunch or a 500-guest wedding.</p>
+  </div>
+
+  <ol class="process">
+    <li>
+      <span class="process-num">01</span>
+      <h3>Tell us the occasion</h3>
+      <p>Guest count, date, veg/non-veg mix, budget range.</p>
+    </li>
+    <li>
+      <span class="process-num">02</span>
+      <h3>We build your menu</h3>
+      <p>Pick from set packages or customise counters &amp; courses.</p>
+    </li>
+    <li>
+      <span class="process-num">03</span>
+      <h3>Tasting &amp; confirmation</h3>
+      <p>Sample the menu, lock quantities, confirm advance.</p>
+    </li>
+    <li>
+      <span class="process-num">04</span>
+      <h3>We show up &amp; serve</h3>
+      <p>Setup, live counters, service staff, clean-up — handled.</p>
+    </li>
+  </ol>
+
+  <div class="packages">
+    <div class="package-card">
+      <h3>Essential</h3>
+      <p class="pkg-price">₹350<span>/ plate</span></p>
+      <ul>
+        <li>2 starters, 3 mains, 1 biryani</li>
+        <li>Buffet setup &amp; service staff</li>
+        <li>Min. 50 guests</li>
+      </ul>
+      <a href="#enquiry" class="btn btn-outline">Enquire</a>
+    </div>
+    <div class="package-card featured">
+      <span class="pkg-badge">Most booked</span>
+      <h3>Celebration</h3>
+      <p class="pkg-price">₹550<span>/ plate</span></p>
+      <ul>
+        <li>3 starters, 5 mains, 2 biryani counters</li>
+        <li>Live counter (1) + dessert bar</li>
+        <li>Min. 75 guests</li>
+      </ul>
+      <a href="#enquiry" class="btn btn-primary">Enquire</a>
+    </div>
+    <div class="package-card">
+      <h3>Grand Wedding</h3>
+      <p class="pkg-price">Custom</p>
+      <ul>
+        <li>Full multi-cuisine spread</li>
+        <li>Multiple live counters, decor add-ons</li>
+        <li>Min. 200 guests</li>
+      </ul>
+      <a href="#enquiry" class="btn btn-outline">Enquire</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CELEBRITY CATERING ============ -->
+<section class="section section-alt" id="celebrity">
+  <div class="section-head">
+    <h2>Trusted for special occasions</h2>
+    <p>NR Foods has catered events attended by notable names from the Telugu film industry.</p>
+  </div>
+  <div class="celeb-grid">
+    <figure class="celeb-card">
+      <img src="assets/celeb-parachuri-gopal-krishna.jpg" alt="Paruchuri Gopala Krishna at an NR Foods catered event">
+      <figcaption>Paruchuri Gopala Krishna</figcaption>
+    </figure>
+    <figure class="celeb-card">
+      <img src="assets/celeb-kiran-abbavaram-family.jpg" alt="Actor Kiran Abbavaram's family at an NR Foods catered event">
+      <figcaption>Kiran Abbavaram's family</figcaption>
+    </figure>
+    <figure class="celeb-card">
+      <img src="assets/celeb-boyapati-srinivas.jpg" alt="Director Boyapati Srinivas at an NR Foods catered event">
+      <figcaption>Boyapati Srinivas</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section" id="gallery">
+  <div class="section-head">
+    <h2>From the kitchen &amp; the events</h2>
+    <p>Send more real photos anytime and I'll keep adding them here.</p>
+  </div>
+  <div class="gallery-grid" id="galleryGrid">
+    <!-- filled by JS with placeholder tiles until more real photos arrive -->
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section section-alt" id="reviews">
+  <div class="section-head">
+    <h2>What guests say</h2>
+    <p>Sample layout only — replace with your real Google / Zomato reviews before launch.</p>
+  </div>
+  <div class="reviews-track" id="reviewsTrack">
+    <div class="review-card">
+      <p>"Biryani was spot on and the team handled our office lunch for 80 people without a hitch."</p>
+      <div class="review-who">— Sample review, Corporate Client</div>
+    </div>
+    <div class="review-card">
+      <p>"Booked them for a family function. The live counter was a great touch, guests loved it."</p>
+      <div class="review-who">— Sample review, Wedding Client</div>
+    </div>
+    <div class="review-card">
+      <p>"Dine-in outlet is clean, quick service, and the Andhra thali is consistently good."</p>
+      <div class="review-who">— Sample review, Regular Customer</div>
+    </div>
+    <div class="review-card">
+      <p>"Punctual delivery and fresh food for our 200-guest wedding reception."</p>
+      <div class="review-who">— Sample review, Wedding Client</div>
+    </div>
+  </div>
+  <div class="reviews-note">Real reviews should be pulled in from your Google Business Profile — I can wire this up once you share access or export them.</div>
+</section>
+
+<!-- ============ VISIT / MAP ============ -->
+<section class="section" id="visit">
+  <div class="section-head">
+    <h2>Visit the outlet</h2>
+    <p>Replace with your real address, hours and map embed.</p>
+  </div>
+  <div class="visit-grid">
+    <div class="visit-info">
+      <div class="visit-row"><strong>Address</strong><span>[Outlet address], Hyderabad, Telangana</span></div>
+      <div class="visit-row"><strong>Hours</strong><span>11:00 AM – 11:00 PM, all days</span></div>
+      <div class="visit-row"><strong>Phone</strong><span>[Business phone number]</span></div>
+      <div class="visit-actions">
+        <a href="#" class="btn btn-primary" id="callBtn">Call outlet</a>
+        <a href="#" class="btn btn-ghost" id="waBtn" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+    <div class="visit-map" aria-hidden="true">
+      <svg viewBox="0 0 400 260" class="map-svg">
+        <rect width="400" height="260" fill="var(--ivory-deep)"/>
+        <path d="M0 90 L400 70" stroke="var(--line)" stroke-width="6"/>
+        <path d="M0 180 L400 200" stroke="var(--line)" stroke-width="6"/>
+        <path d="M140 0 L120 260" stroke="var(--line)" stroke-width="6"/>
+        <path d="M280 0 L300 260" stroke="var(--line)" stroke-width="6"/>
+        <circle cx="205" cy="135" r="14" fill="var(--maroon)"/>
+        <circle cx="205" cy="135" r="5" fill="var(--ivory)"/>
+        <text x="220" y="140" font-family="Archivo" font-size="13" fill="var(--ink)">NR Foods</text>
+      </svg>
+      <p class="map-caption">Map embed goes here (Google Maps iframe with real coordinates)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENQUIRY FORM ============ -->
+<section class="section section-dark" id="enquiry">
+  <div class="section-head light">
+    <h2>Get a catering quote</h2>
+    <p>Fill this in and we'll get back with a menu &amp; price within 24 hours.</p>
+  </div>
+
+  <form class="enquiry-form" id="enquiryForm" novalidate>
+    <div class="form-row">
+      <label>
+        <span>Your name</span>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        <span>Phone number</span>
+        <input type="tel" name="phone" required pattern="[0-9+\-\s]{7,15}">
+      </label>
+    </div>
+    <div class="form-row">
+      <label>
+        <span>Event type</span>
+        <select name="eventType" required>
+          <option value="">Select one</option>
+          <option>Wedding</option>
+          <option>Corporate event</option>
+          <option>Birthday / house party</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label>
+        <span>Guest count</span>
+        <input type="number" name="guests" min="1" required>
+      </label>
+    </div>
+    <div class="form-row">
+      <label>
+        <span>Event date</span>
+        <input type="date" name="date" required>
+      </label>
+      <label>
+        <span>Veg / Non-veg</span>
+        <select name="pref" required>
+          <option value="">Select one</option>
+          <option>Pure Veg</option>
+          <option>Veg + Non-Veg</option>
+        </select>
+      </label>
+    </div>
+    <label class="full">
+      <span>Anything else we should know?</span>
+      <textarea name="notes" rows="3" placeholder="Location, budget range, special requests..."></textarea>
+    </label>
+    <button type="submit" class="btn btn-primary btn-wide">Send enquiry</button>
+    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="brand footer-brand">
+      <img src="assets/nrfoods-logo.png" alt="NR Foods" class="brand-logo brand-logo-footer">
+    </div>
+    <div class="footer-links">
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#celebrity">Celebrity Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit Us</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" id="footerIgBtn" target="_blank" rel="noopener">Instagram</a>
+      <span>·</span>
+      <a href="#" id="footerWaBtn" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <p class="footer-note">Prototype site — content is placeholder, ready to be swapped with real menu, photos, hours and reviews.</p>
+</footer>
+
+<div class="float-stack">
+  <a href="#" class="float-btn float-ig" id="igFloat" target="_blank" rel="noopener" aria-label="View Instagram">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+  </a>
+  <a href="#" class="float-btn float-wa" id="waFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.24.6 4.4 1.74 6.3L4 29l7.86-1.7a12.9 12.9 0 0 0 4.16.7h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.9c-1.3 0-2.58-.24-3.78-.7l-.27-.1-4.66 1 1.02-4.54-.17-.28a9.85 9.85 0 0 1-1.5-5.26c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c-.01 5.47-4.45 9.89-9.93 9.89zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.36-1.46a8.86 8.86 0 0 1-1.63-2.03c-.17-.3-.02-.46.13-.6.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.63-.92-2.23-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.09 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
